@@ -5,8 +5,8 @@ A production-ready, containerized RESTful API bridging Data Science and Backend 
 This project demonstrates a complete End-to-End MLOps pipeline. It wraps a Scikit-learn Random Forest model into a high-performance FastAPI service, ensuring reproducibility through Docker and data observability through automated SQLite logging.
 
 # Core Value Proposition
-- model deployment beyond Jupyter Notebooks
-- strict type validation (Pydantic) and API design patterns.
+- Model deployment beyond Jupyter Notebooks
+- Strict type validation (Pydantic) and API design patterns.
 - Provide containerized solution
 
 # Key Features
