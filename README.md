@@ -20,7 +20,7 @@ A deep learning-based image classification service for Japanese characters (Kuzu
 
 - **Tech Stack**: PyTorch, CNN, FastAPI
 - **Status**: Under Development
-- **Link**: [Private]()
+- **Link**: [Private, Preparing]()
 
 ### NFL Trajectory Prediction
 
