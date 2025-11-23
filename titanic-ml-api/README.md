@@ -28,7 +28,7 @@ This project leverages a modern, lightweight Python stack designed for microserv
 # Repository Structure
 The project follows a standard microservice layout:
 ```markdown
-ml-api-project/
+titanic-ml-api/
 ├── Dockerfile              # Instructions to build the container image
 ├── main.py                 # Entry point for FastAPI & business logic
 ├── train_model.py          # Script to train and serialize the model
@@ -38,16 +38,32 @@ ml-api-project/
 ```
 
 # Quick Start Guide
+**Prerequisites:** Ensure you have Docker Desktop installed and running.
+
+- [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Verify installation by running `docker --version` in your terminal.
+- Clone or download this repository, make sure your work path is under the project folder（which should include the 'Dockerfile'）
+- Then run the following commands in your terminal:
+
 1. Build the Image
+
    ```bash
    docker build -t titanic-api .
    ```
+
 2. Run the Container
    ```bash
    docker run -p 8000:8000 titanic-api
    ```
+
 3. Test the API
-[Visit the auto-generated documentation](http://localhost:8000/docs)
+  [Visit the auto-generated documentation](http://localhost:8000/docs)
+
+4. Make prediction
+
+  ![image-20251123161558949](C:\Users\zhy\AppData\Roaming\Typora\typora-user-images\image-20251123161558949.png)
+
+  
 
 # API Documentation
 Interactive Swagger UI is available at ```/docs```.
@@ -60,7 +76,7 @@ Interactive Swagger UI is available at ```/docs```.
    - Method: ```POST```
    - Endpoint: ```/predict```
    - Description: Submits passenger data for inference.
-Example Request:
+   Example Request:
 ```
 {
   "pclass": 1,
@@ -82,6 +98,6 @@ Example Response:
    - Description: Fetches recent inference history from SQLite for debugging.
 
 # Roadmap & Improvements
-- [] Database: Migrate from SQLite to PostgreSQL for better scalability.
-- [] CI/CD: Add GitHub Actions for automated linting and testing.
-- [] Monitoring: Integrate Prometheus/Grafana for metric visualization.
+- Database: Migrate from SQLite to PostgreSQL for better scalability.
+- CI/CD: Add GitHub Actions for automated linting and testing.
+- Monitoring: Integrate Prometheus/Grafana for metric visualization.
