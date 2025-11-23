@@ -1,87 +1,52 @@
-# Titanic ML Inference API
-A production-ready, containerized RESTful API bridging Data Science and Backend Engineering.
+# Hi, I'm [Your Name]
 
-# Project Overview
-This project demonstrates a complete End-to-End MLOps pipeline. It wraps a Scikit-learn Random Forest model into a high-performance FastAPI service, ensuring reproducibility through Docker and data observability through automated SQLite logging.
+> **Machine Learning Engineer / Backend Developer** Passionate about building production-ready AI applications and scalable backend systems.
 
-# Core Value Proposition
-- Model deployment beyond Jupyter Notebooks
-- Strict type validation (Pydantic) and API design patterns.
-- Provide containerized solution
+## Project Portfolio
 
-# Key Features
-This service is designed with production standards in mind:
-- ML Inference: Serves a Random Forest Classifier trained on the Titanic dataset.
-- High-Performance: Built with FastAPI for asynchronous, low-latency request handling.(need explaination)
-- Data Persistence: Automated SQLite logging captures every request/response for monitoring.
-- Dockerized: Fully containerized environment ensures consistent deployment across any OS.
-- Robust Validation: Uses Pydantic schemas to enforce strict data types and prevent runtime errors.(need explaination)
+This repository contains a collection of my technical projects demonstrating skills in MLOps, API Development, and Deep Learning.
 
-# Tech Stack
-This project leverages a modern, lightweight Python stack designed for microservices.
-- Language: Python
-- Web Framework: FastAPI + Uvicorn
-- ML Core: Scikit-learn, Pandas
-- Database: SQLite
-- Infrastructure: Docker
+### Titanic ML Inference API
 
-# Repository Structure
-The project follows a standard microservice layout:
-```markdown
-ml-api-project/
-├── Dockerfile              # Instructions to build the container image
-├── main.py                 # Entry point for FastAPI & business logic
-├── train_model.py          # Script to train and serialize the model
-├── requirements.txt        # Python dependencies list
-├── titanic_model.pkl       # Serialized binary model file
-└── titanic_logs.db         # Database file for inference logs
-```
+A production-ready RESTful API for survival prediction with automated SQLite logging.
 
-# Quick Start Guide
-1. Build the Image
-   ```bash
-   docker build -t titanic-api .
-   ```
-2. Run the Container
-   ```bash
-   docker run -p 8000:8000 titanic-api
-   ```
-3. Test the API
-[Visit the auto-generated documentation](http://localhost:8000/docs)
+- **Tech Stack**: FastAPI, Docker, Scikit-learn
+- **Status**: Completed
+- **Link**: [View Project](https://www.google.com/search?q=./titanic-ml-api)
 
-# API Documentation
-Interactive Swagger UI is available at ```/docs```.
+### Hiragana Character Classifier
 
-1. Health Check
-   - Method: ```GET```
-   - Endpoint: ```/```
-   - Returns: Service status message to verify uptime.
-2. Predict Survival (Core Business Logic)
-   - Method: ```POST```
-   - Endpoint: ```/predict```
-   - Description: Submits passenger data for inference.
-Example Request:
-```
-{
-  "pclass": 1,
-  "age": 25.5,
-  "fare": 50.0
-}
-```
-Example Response:
-```
-{
-  "survived_prediction": 1,
-  "survival_probability": 0.88,
-  "log_status": "Saved to Database"
-}
-```
-3. View Logs
-   - Method: ```GET```
-   - Endpoint: ```/logs```
-   - Description: Fetches recent inference history from SQLite for debugging.
+A deep learning-based image classification service for Japanese characters (Kuzushiji-49).
 
-# Roadmap & Improvements
-- [] Database: Migrate from SQLite to PostgreSQL for better scalability.
-- [] CI/CD: Add GitHub Actions for automated linting and testing.
-- [] Monitoring: Integrate Prometheus/Grafana for metric visualization.
+- **Tech Stack**: PyTorch, CNN, FastAPI
+- **Status**: Under Development
+- **Link**: [View Project](https://www.google.com/search?q=./hiragana-classifier)
+
+### NFL Trajectory Prediction
+
+Multi-agent trajectory forecasting for NFL players using Next Gen Stats.
+
+- **Tech Stack**: Transformer, Time-Series
+- **Status**: Upcoming
+- **Link**: [View Project](https://www.google.com/search?q=./kaggle-nfl)
+
+Here is a collection of my technical projects demonstrating my skills in **MLOps**, **API Development**, and **Deep Learning**.
+
+| Project                                                      | Tech Stack                                 | Description                                                  | Status (date)              |
+| ------------------------------------------------------------ | :----------------------------------------- | ------------------------------------------------------------ | -------------------------- |
+| [**Titanic ML Inference API**](https://www.google.com/search?q=./titanic-ml-api) | `FastAPI` `Docker` `Scikit-learn` `SQLite` | A production-ready RESTful API for survival prediction with automated data logging and containerized deployment. | **Completed (2025/11/22)** |
+| **Hiragana Character Classifier**                            | `PyTorch` `CNN` `FastAPI` `Docker`         | A deep learning-based image classification service for Japanese characters. | **In Progress (Private)**  |
+| [**NFL Trajectory Prediction**](https://www.google.com/search?q=./kaggle-nfl) | `Transformer` `Time-Series` `PyTorch`      | Multi-agent trajectory forecasting for NFL players using Next Gen Stats tracking data. | **Upcoming**               |
+
+## Technical Skills
+
+- **Languages**: Python (Advanced), C, SQL
+- **Frameworks**: FastAPI, PyTorch, Scikit-learn, Keras, Tensorfl
+- **Infrastructure**: Docker, Linux, Git
+- **Databases**: PostgreSQL, SQLite
+
+## Contact
+
+- **GitHub**: https://github.com/newhouse-ss
+- **Email**: zhouhengyu21510@gmail.com
+- **Kaggle**: https://www.kaggle.com/zhouhengyuu
