@@ -14,14 +14,6 @@ A production-ready RESTful API for survival prediction with automated SQLite log
 - **Status**: Completed
 - **Link**: [View Project](https://github.com/newhouse-ss/Portfolio/tree/main/titanic-ml-api)
 
-### Hiragana Character Classifier(Private)
-
-A deep learning-based image classification service for Japanese characters (Kuzushiji-49).
-
-- **Tech Stack**: PyTorch, CNN, FastAPI
-- **Status**: Under Development
-- **Link**: [Private, Preparing]()
-
 ### NFL Trajectory Prediction
 
 Multi-agent trajectory forecasting for NFL players using Next Gen Stats.
@@ -35,8 +27,8 @@ Here is a collection of my technical projects demonstrating my skills in **MLOps
 | Project                                                      | Tech Stack                                 | Description                                                  | Status (date)              |
 | ------------------------------------------------------------ | :----------------------------------------- | ------------------------------------------------------------ | -------------------------- |
 | [**Titanic ML Inference API**](https://github.com/newhouse-ss/Portfolio/tree/main/titanic-ml-api) | `FastAPI` `Docker` `Scikit-learn` `SQLite` | A production-ready RESTful API for survival prediction with automated data logging and containerized deployment. | **Completed (2025/11/22)** |
-| **Hiragana Character Classifier**                            | `PyTorch` `CNN` `FastAPI` `Docker`         | A deep learning-based image classification service for Japanese characters. | **In Progress (Private)**  |
 | [**NFL Trajectory Prediction**](https://www.google.com/search?q=./kaggle-nfl) | `Transformer` `Time-Series` `PyTorch`      | Multi-agent trajectory forecasting for NFL players using Next Gen Stats tracking data. | **Upcoming**               |
+|                                                              |                                            |                                                              |                            |
 
 ## Technical Skills
 
